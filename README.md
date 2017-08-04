@@ -43,10 +43,24 @@ The following are the possible options to run the algorithm in the terminal:
 
 Three examples are provided along with this project in the folder dataset
 
+* Example dataset
 ```
-Give an example
+java -jar ./build/jar/subgraphmining.jar -g ../../datasets/example/example_graph.txt -l ../../datasets/example/example_labels.txt -p ../../datasets/example/example_vertexset.txt -s 2 -m 4 -a fsg -d
+```
+* PDB dataset
+```
+java -Xms64m -Xmx4096m -jar ./build/jar/subgraphmining.jar -g ./datasets/pdb/SSM_GR.txt -l ./datasets/pdb/SSM_LA.txt -p ./datasets/pdb/SSM_MN.txt -s 25 -m 2 -a gspan -i
 ```
 
+* Yeast dataset
+```
+time java -Xms64m -Xmx16384m -jar ./build/jar/subgraphmining.jar -g ./yeast/yeastract_edges.txt -l ./datasets/yeast/yeast_gocat_mutiple.txt -p ./datasets/yeast/node_duplicate.txt -s 10 -m 4 -a base -o ./yeastS10M4Single.txt -t ./yeastS10M4SingleStats.txt
+```
+
+* Bact dataset
+```
+time java -Xms64m -Xmx16384m -jar ./build/jar/subgraphmining.jar -g ./datasets/bact/full_net.txt -p ./atasets/bact/phor.txt -b ./datasets/bact/tfs.txt -o ./bactS5M5.txt -t ./bactS5M5Stats.txt -m 5 -s 10 -a base
+```
 ## Authors
 
 * **Gerardo Orellana** - [gero](https://github.com/geraore)
