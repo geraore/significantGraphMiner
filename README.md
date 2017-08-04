@@ -68,6 +68,5 @@ time java -Xms64m -Xmx16384m -jar ./build/jar/subgraphmining.jar -g ./datasets/b
 
 ## Acknowledgments
 
-* 
-* 
-* 
+* To SENESCYT (Secretaría de Educación Superior, Ciencia, Tecnología e Información), for funding my studies abroad, providing me the opportunity to live and study abroad.
+* To the Advanced Database Research and Modeling (ADReM) group of the University of Antwerp, for providing the opportunity of this master thesis, specially to Pieter Meysman, for his guidance and willingness to share his knowledge on the topic.
